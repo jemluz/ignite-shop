@@ -1,40 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignite Shop
 
-## Getting Started
+Projeto focado em aprofundar os conhecimentos com NextJS e escalabilidade.
 
-First, run the development server:
+![Cover](https://github.com/jemluz/ignite-shop/assets/23065460/17a2a3f6-6c7a-4d90-9495-2c3229db7dd9)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requisitos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Página de Listagem de produtos
+- Página de Detalhe de produto
+- Página de Checkout / Pagamento (integração com API do stripe)
+- Página de Pedido realizado
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Tecnologias e bibliotecas
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [NextJS](https://nextjs.org/)
+- [Stripe](https://stripe.com/docs/api) (API integration)
+- [Axios](https://axios-http.com/) (Requests)
+- [Stitches](https://stitches.dev/) (Styling)
+- [Keen Slider](https://keen-slider.io/) (Products List)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Issues com tópicos discutidos/estudados no projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- ### [Fundamentos do Next.js #1](https://github.com/jemluz/ignite-shop/issues/1)
 
-## Learn More
+  - SSR
+  - File System Routing
+  - Entendendo o \_document.tsx
 
-To learn more about Next.js, take a look at the following resources:
+- ### [Estrutura visual #2](https://github.com/jemluz/ignite-shop/issues/2)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - Configurando stitches
+  - Otimização de imagens com Next <Image>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ### [Integração com API / stripe (SSR & SSG) #3](https://github.com/jemluz/ignite-shop/issues/3)
 
-## Deploy on Vercel
+  - Variáveis de ambiente
+  - getServerSideProps e o Next debaixo dos panos
+  - Aplicando getServerSideProps
+  - Utilizando SSG (Static Side Generation)
+  - Formatando preço
+  - Quiz pra saber se vc vai de SSR ou SSG
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ### [Produto & checkout (Next avançado) #4](https://github.com/jemluz/ignite-shop/issues/4)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - Navegação via <Link>
+  - Carregando dados de produto
+  - SSG com parâmetro dinâmico
+  - Fallback do SSG
+  - Prefetch de links no Next
+  - API Routes no NextJS
+  - Requisições com axios
+  - Dados da compra no sucesso (revisão rápida)
+  - Redirect no SSR
+  - SEO no Next
